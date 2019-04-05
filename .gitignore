@@ -1,3 +1,9 @@
+## Generated PDF at top-level of tree:
+/*.pdf
+
+## Mac metadata file
+.DS_Store
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
