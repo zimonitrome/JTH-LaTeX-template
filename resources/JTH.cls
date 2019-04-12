@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{JTH}[2019/04/12 JU-JTH LaTeX class]
+\ProvidesClass{resources/JTH}[2019/04/12 JU-JTH LaTeX class]
 
 % Build on existing report class
 \LoadClass[12pt, a4paper]{article}
@@ -32,8 +32,6 @@
 \RequirePackage{natbib}
 
 % --- Package loading ends ---
-
-\graphicspath{{images/}}
 
 % Define a macro for the shorter title
 \newcommand*{\shorttitle}[1]{\gdef\@shorttitle{#1}}
