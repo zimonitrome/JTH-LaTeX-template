@@ -7,7 +7,7 @@
 
 \title{Example main title}
 \shorttitle{Example main title} % Should be max 50 characters
-\subtitle{Example subtitle}
+\subtitle{Example subtitle} 
 \author{John Student, Lucy Student}
 \subject{Computer Science}
 \programme{three-year Bachelor of Science in Engineering}
@@ -20,10 +20,16 @@
 \maketitle
 
 \pagenumbering{Roman}
-\tableofcontents
+
+\begingroup
+    \setlength{\parskip}{0pt} % Restore \parskip within this scope
+    \tableofcontents
+\endgroup
 
 \newpage
+
 \pagenumbering{arabic}
+
 \section{Introduction}
     Lorem ipsum \cite{Breiman_1996} dolor sit amet, consectetur adipiscing elit. Etiam tristique odio ultrices sem pellentesque posuere. Duis tempus aliquam elit, at vestibulum nisi cursus sed. Nullam at nisi venenatis, faucibus lectus ut, hendrerit tellus. Nullam lorem ex, gravida ac nulla eget, tristique maximus enim. Donec at dapibus risus. Integer a nunc urna. Integer tristique urna lorem, non aliquam elit tincidunt eu. Duis euismod congue est, eu elementum ipsum tempus a. Mauris ac tempus dui. Curabitur sollicitudin interdum elit venenatis dictum. \citep{davidson1996c}
 
@@ -74,10 +80,16 @@
 \bibliography{example.bib}
 
 \newpage
-\appendix
+\begin{appendices}
 
 \section{Gathered Data}
 
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tristique odio ultrices sem pellentesque posuere. Duis tempus aliquam elit, at vestibulum nisi cursus sed. Nullam at nisi venenatis, faucibus lectus ut, hendrerit tellus. Nullam lorem ex, gravida ac nulla eget, tristique maximus enim. Donec at dapibus risus. Vivamus ac gravida justo. Duis pellentesque non tortor ut iaculis. Sed tincidunt dolor eu enim maximus rutrum. Sed id congue turpis. Aenean sodales ipsum vel sem tincidunt, sit amet rutrum velit volutpat. Nunc cursus, justo id lacinia pharetra, nulla magna tincidunt neque, id suscipit odio risus at nisi.
+    
+\section{Info about company}
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tristique odio ultrices sem pellentesque posuere. Duis tempus aliquam elit, at vestibulum nisi cursus sed. Nullam at nisi venenatis, faucibus lectus ut, hendrerit tellus. Nullam lorem ex, gravida ac nulla eget, tristique maximus enim. Donec at dapibus risus. Vivamus ac gravida justo. Duis pellentesque non tortor ut iaculis. Sed tincidunt dolor eu enim maximus rutrum. Sed id congue turpis. Aenean sodales ipsum vel sem tincidunt, sit amet rutrum velit volutpat. Nunc cursus, justo id lacinia pharetra, nulla magna tincidunt neque, id suscipit odio risus at nisi.
+
+\end{appendices}
 
 \end{document}
