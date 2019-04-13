@@ -1,0 +1,62 @@
+\documentclass[11pt, a4paper]{resources/JTH}
+
+\usepackage[nottoc]{tocbibind}
+\usepackage[utf8]{inputenc}
+
+\graphicspath{ {./resources/} }
+
+\title{[Title]}
+\shorttitle{[Title in header]}
+\subtitle{[Subtitle]} 
+\author{[Student A name], [Student B name]}
+\subject{[Field of science]} 
+\programme{three-year Bachelor of Science in Engineering}
+\supervisor{[Supervisor name]}
+\examiner{[Examiner]}
+\credits{7,5}
+
+\begin{document}
+
+\maketitle
+
+\pagenumbering{Roman}
+
+\begingroup
+    \setlength{\parskip}{0pt} % Restore \parskip within this scope
+    \tableofcontents
+\endgroup
+
+\newpage
+
+\pagenumbering{arabic}
+
+\section{[First Chapter]}
+
+    [Text]
+
+\section{[Second Chapter]}
+    
+    [Text]
+
+    \subsection{[Subchapter]}
+
+        [Text]
+
+\newpage
+\bibliographystyle{apacite}
+\bibliography{example.bib}
+
+\newpage
+\begin{appendices} % Remove if you have no appendices
+
+\section{[First appendix]}
+
+    [Text]
+    
+\section{[Second appendix]}
+
+    [Text]
+
+\end{appendices}
+
+\end{document}
