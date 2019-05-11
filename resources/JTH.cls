@@ -24,7 +24,7 @@
 \RequirePackage{geometry}
 \RequirePackage{tabularx}
 \RequirePackage{multicol}
-\RequirePackage{apacite}
+\RequirePackage[natbibapa]{apacite}
 \RequirePackage{caption}
 \RequirePackage[nottoc]{tocbibind}
 \RequirePackage[toc,page]{appendix}
