@@ -16,6 +16,7 @@
 
 % Colors
 \RequirePackage{xcolor}
+\usepackage{color}
 
 % Fonts
 \RequirePackage{helvet}
@@ -33,7 +34,15 @@
 \RequirePackage[toc,page]{appendix}
 \RequirePackage{datetime}
 
-
+% Good to have packages
+\RequirePackage{url}
+\RequirePackage{soulutf8}
+\RequirePackage{booktabs}
+\RequirePackage{csquotes}
+\RequirePackage{amsmath}
+\RequirePackage[T1]{fontenc}
+\RequirePackage{siunitx}
+\RequirePackage{multirow}
 
 % --- Package loading ends ---
 
@@ -186,3 +195,7 @@
 \def\paragraphautorefname{Paragraph}%
 \def\tableautorefname{Table}%
 \def\equationautorefname{Equation}%
+
+% Command for bold table number
+\newrobustcmd\B{\DeclareFontSeriesDefault[rm]{bf}{b}\bfseries}
+\sisetup{detect-weight,mode=text,group-minimum-digits = 4}
