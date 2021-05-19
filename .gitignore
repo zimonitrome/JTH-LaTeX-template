@@ -1,5 +1,6 @@
 ## Generated PDF at top-level of tree:
 /*.pdf
+!/example.pdf
 
 ## Mac metadata file
 .DS_Store
