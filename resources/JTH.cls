@@ -1,8 +1,8 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{resources/JTH}[2019/04/12 JU-JTH LaTeX class]
+\ProvidesClass{JTH}[2021/05/19 JU-JTH LaTeX class]
 
 % Build on existing report class
-\LoadClass[12pt, a4paper]{article}
+\LoadClass[10pt, a4paper]{article}
 
 % --- Package loading starts ---
 % Core LaTeX features
@@ -145,7 +145,7 @@
 	\newpage
 	
 	% And finally, set the nice spacing again
-	\setstretch{1.2}
+	\setstretch{1.0}
 }
 % --- End of fancy title page command ---
 
