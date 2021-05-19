@@ -168,10 +168,8 @@
 
 % Format figures/tables correctly
 \DeclareCaptionLabelSeparator*{spaced}{\\[2ex]}
-\captionsetup[table]{textfont=it,format=plain,justification=justified,
-  singlelinecheck=false,labelsep=spaced,skip=0pt}
-\captionsetup[figure]{labelsep=period,labelfont=it,justification=justified,
-  singlelinecheck=false,font=doublespacing}
+\captionsetup[table]{textfont=it,format=plain,justification=justified, singlelinecheck=false,labelsep=spaced,skip=0pt}
+\captionsetup[figure]{labelsep=period,labelfont=it,justification=justified, singlelinecheck=false,font={footnotesize}}
 
 % Format appendices correctly with TOC
 \appendixtitletocon % Make ToC display "Appendix A/B/C/etc."
