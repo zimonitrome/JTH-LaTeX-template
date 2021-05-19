@@ -174,3 +174,15 @@
 % Format appendices correctly with TOC
 \appendixtitletocon % Make ToC display "Appendix A/B/C/etc."
 \appendixtitleon % Make the appendix chapter have a proper title
+
+% Define a macro for appendix referring
+\newcommand*{\aref}[1]{\hyperref[#1]{appendix \ref{#1}}}
+
+% Fix capital letter on autoref
+\def\chapterautorefname{Chapter}%
+\def\sectionautorefname{Section}%
+\def\subsectionautorefname{Subsection}%
+\def\subsubsectionautorefname{Subsubsection}%
+\def\paragraphautorefname{Paragraph}%
+\def\tableautorefname{Table}%
+\def\equationautorefname{Equation}%
