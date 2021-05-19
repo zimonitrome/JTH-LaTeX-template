@@ -10,6 +10,10 @@
 \RequirePackage{graphicx}
 \RequirePackage[utf8]{inputenc}
 
+% Citation system
+\RequirePackage[style=apa,sortcites=true,sorting=nyt,backend=biber,block=ragged]{biblatex}
+\setlength\bibitemsep{1.5\itemsep}  % Adds extra spacing between reference entries
+
 % Colors
 \RequirePackage{xcolor}
 
@@ -24,12 +28,12 @@
 \RequirePackage{geometry}
 \RequirePackage{tabularx}
 \RequirePackage{multicol}
-\RequirePackage[natbibapa]{apacite}
 \RequirePackage{caption}
 \RequirePackage[nottoc]{tocbibind}
 \RequirePackage[toc,page]{appendix}
 \RequirePackage{datetime}
-\RequirePackage{natbib}
+
+
 
 % --- Package loading ends ---
 
@@ -148,10 +152,6 @@
 	\setstretch{1.0}
 }
 % --- End of fancy title page command ---
-
-% Changes DOI to https format
-\renewcommand{\doiprefix}{}
-\newcommand{\doi}[1]{\href{https://doi.org/#1}{https://doi.org/#1}}
 
 % Specify header
 \pagestyle{fancy}
